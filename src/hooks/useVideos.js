@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import youtube from '../api/youtube';
 
-const useVideo = (defaultSearchTerm) => {
+const useVideos = (defaultSearchTerm) => {
   const [ videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -21,4 +21,4 @@ const useVideo = (defaultSearchTerm) => {
    return [videos, search];
 };
 
-export default useVideo;
+export default useVideos;
